@@ -102,7 +102,7 @@ namespace TDDSample.Web.Tests
         }
 
         [Fact]
-        public void 新作一泊普通を三泊借りたら600円()
+        public void 新作一泊普通を三泊借りたら700円()
         {
             _customer.AddRental(new Rental(_movieNewRelease, 1));
             _customer.AddRental(new Rental(_movieRegular, 3));

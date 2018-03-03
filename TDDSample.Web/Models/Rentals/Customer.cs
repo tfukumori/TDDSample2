@@ -59,14 +59,14 @@ namespace TDDSample.Web.Models.Rentals
 
         private decimal GetRentalFee普通(Rental item)
         {
-            var 料金 = 200M;
+            const decimal 料金 = 200M;
             if (item.DaysRented <= 2)
             {
                 return 料金;
             }
             else
             {
-                return (item.DaysRented - 2) * 200M;
+                return 料金 + ((item.DaysRented - 2) * 200M);
             }
 
             throw new InvalidOperationException();
